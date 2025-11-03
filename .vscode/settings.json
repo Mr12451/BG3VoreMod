@@ -1,0 +1,95 @@
+{
+    "vscode-lua-format.configPath": "lua-format.config",
+    "Lua.diagnostics.disable": [
+        "redundant-parameter",
+        "param-type-mismatch",
+        "cast-local-type"
+    ],
+    "Lua.format.enable": false,
+    "Lua.codeLens.enable": true,
+    "Lua.hover.expandAlias": false,
+    "emmylua.name.config": {
+        "local_name_style": ["camel_case", "upper_snake_case"],
+        "function_param_name_style": "camel_case",
+        "function_name_style": {
+            "type": "pattern",
+            "param": "^(?:SP_)?(\\w+)$",
+            "$1": "pascal_case"
+        },
+        "local_function_name_style": {
+            "type": "pattern",
+            "param": "^(?:SP_)?(\\w+)$",
+            "$1": "pascal_case"
+        },
+        //"table_field_name_style": "",
+        "global_variable_name_style": "pascal_case",
+        //"module_name_style": "",
+        //"require_module_name_style": "",
+        //"class_name_style": "",
+    },
+    "emmylua.codeLens": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword.control.bg3txt",
+                "settings": {
+                    "foreground": "#C586C0"
+                }
+            },
+            {
+                "scope": "keyword.operator.bg3txt",
+                "settings": {
+                    "foreground": "#ffa200"
+                }
+            },
+            {
+                "scope": "string.first-column.bg3txt",
+                "settings": {
+                    "foreground": "#9CDCFE"
+                }
+            }
+        ]
+    },
+    "files.associations": {
+        "*.txt": "bg3"
+    },
+    "emmylua.spell.dict": [
+        "vore",
+        "endo"
+    ],
+    "emmylua.hint.paramHint": false,
+    "emmylua.typecheck.defineAnyTypeCanBeAssignedByAnyVariable": false,
+    "emmylua.typecheck.anyTypeCanAssignToAnyDefineType": false,
+    "emmylua.hint.varargHint": false,
+    "Lua.diagnostics.ignoredFiles": "Disable",
+    "Lua.diagnostics.globals": [
+        "Ext",
+        "Osi",
+        "ModuleUUID",
+        "_D",
+        "Mods"
+    ],
+    "Lua.workspace.useGitIgnore": false,
+    "Lua.diagnostics.ignore": [
+        "path/to/your/directory/"
+    ],
+    "Lua.runtime.builtin": {
+        "math": "enable",
+        "table": "enable",
+        "string": "enable",
+        "builtin": "enable",
+        "basic": "enable"
+    },
+    "Lua.type.weakNilCheck": true,
+    "Lua.type.weakUnionCheck": true,
+    "files.exclude": {
+        "BG3VoreMod\\Public\\BG3VoreMod\\Stats\\Generated\\Data\\*.txt": true
+    },
+    "bg3ModHelper.rootModPath": "c:\\Games\\BG3Mods\\temp_mod\\BG3VoreMod",
+    "bg3ModHelper.modDestPath": "",
+    "bg3ModHelper.packingPriority": 0,
+    "Lua.workspace.preloadFileSize": 700,
+    "bg3ModHelper.modName": "BG3VoreMod"
+
+      
+}
