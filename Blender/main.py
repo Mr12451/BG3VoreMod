@@ -206,9 +206,9 @@ def write_one(name: str, meshName: str, slot: str, volume: float, i: int, materi
                     <attribute id="SkeletonSlot" type="FixedString" value="" />
                     <attribute id="Slot" type="FixedString" value="{slot}" />
                     <attribute id="SoftbodyResourceID" type="FixedString" value="" />
-                    <attribute id="SourceFile" type="LSString" value="Generated/Public/BG3VoreMod/Assets/Characters/Humans/{name}" />
+                    <attribute id="SourceFile" type="LSString" value="Generated/Public/VoreMod/Assets/Characters/Humans/{name}" />
                     <attribute id="SupportsVertexColorMask" type="bool" value="False" />
-                    <attribute id="Template" type="FixedString" value="Generated/Public/BG3VoreMod/Assets/Characters/Humans/{splitName}.Dummy_Root.0" />
+                    <attribute id="Template" type="FixedString" value="Generated/Public/VoreMod/Assets/Characters/Humans/{splitName}.Dummy_Root.0" />
                     <attribute id="_OriginalFileVersion_" type="int64" value="144115207403209033" />
                     <children>
                         <node id="AnimationWaterfall">

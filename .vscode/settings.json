@@ -83,13 +83,13 @@
     "Lua.type.weakNilCheck": true,
     "Lua.type.weakUnionCheck": true,
     "files.exclude": {
-        "BG3VoreMod\\Public\\BG3VoreMod\\Stats\\Generated\\Data\\*.txt": true
+        "VoreMod\\Public\\VoreMod\\Stats\\Generated\\Data\\*.txt": true
     },
-    "bg3ModHelper.rootModPath": "c:\\Games\\BG3Mods\\temp_mod\\BG3VoreMod",
+    "bg3ModHelper.rootModPath": "c:\\Games\\BG3Mods\\temp_mod\\VoreMod",
     "bg3ModHelper.modDestPath": "",
     "bg3ModHelper.packingPriority": 0,
     "Lua.workspace.preloadFileSize": 700,
-    "bg3ModHelper.modName": "BG3VoreMod"
+    "bg3ModHelper.modName": "VoreMod"
 
       
 }
