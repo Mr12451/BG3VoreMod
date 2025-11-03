@@ -9,7 +9,7 @@
           <attribute id="Author" type="LSString" value="Mr12451, Acolyte" />
           <attribute id="CharacterCreationLevelName" type="FixedString" value="" />
           <attribute id="Description" type="LSWString" value="A vore mod." />
-          <attribute id="Folder" type="LSString" value="BG3VoreMod" />
+          <attribute id="Folder" type="LSString" value="VoreMod" />
           <attribute id="LobbyLevelName" type="FixedString" value="" />
           <attribute id="MD5" type="LSString" value="" />
           <attribute id="MainMenuBackgroundVideo" type="FixedString" value="" />
