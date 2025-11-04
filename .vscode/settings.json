@@ -85,7 +85,7 @@
     "files.exclude": {
         "VoreMod\\Public\\VoreMod\\Stats\\Generated\\Data\\*.txt": true
     },
-    "bg3ModHelper.rootModPath": "c:\\Games\\BG3Mods\\temp_mod\\VoreMod",
+    "bg3ModHelper.rootModPath": "c:\\Games\\BG3Mods\\temp_mod\\BG3VoreMod",
     "bg3ModHelper.modDestPath": "",
     "bg3ModHelper.packingPriority": 0,
     "Lua.workspace.preloadFileSize": 700,

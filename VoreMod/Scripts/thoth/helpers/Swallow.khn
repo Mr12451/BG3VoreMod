@@ -1,0 +1,7 @@
+function VO_CanVore()
+    return ConditionResult(true)
+end
+
+function VO_SwallowCheck()
+    return ConditionResult(true)
+end

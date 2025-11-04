@@ -1,3 +1,8 @@
+Ext.Require("Utils/Output.lua")
+Ext.Require("Utils/Tables.lua")
+Ext.Require("Data/MainData.lua")
+Ext.Require("Data/Persistent.lua")
+
 --[[function makePredator(character)
     Osi.AddTag(character, "Predator")
 end
@@ -12,9 +17,20 @@ function makeWillingPrey(character)
     Osi.AddTag(character, "Willing")
 end]]
 
-_P("hello world server")
+local function OnSessionLoaded()
+    _P("hello world server")
 
-function OnSessionLoaded()
+    _D(PersistentVars)
+    -- SP_ResetConfig()
+    -- SP_ResetRaceWeightsConfig()
+    -- SP_LoadConfigFromFile()
+    -- SP_LoadRaceWeightsConfigFromFile()
+    -- SP_LoadRaceBellyConfigFromFile()
+
+    VO_SetupData()
+
+    -- SP_MigratePersistentVars()
+
     --[[_P("Add Passive")
     Osi.AddPassive(GetHostCharacter(), "SP_CanOralVore")]]
 end
