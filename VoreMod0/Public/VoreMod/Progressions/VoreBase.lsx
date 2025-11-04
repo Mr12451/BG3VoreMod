@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="0" revision="9" build="330"/>
+    <region id="Progressions">
+        <node id="root">
+            <children>
+                <node id="Progression">
+                    <attribute id="Level" type="uint8" value="1"/>
+                    <attribute id="Name" type="LSString" value="VoreBase"/>
+                    <attribute id="ProgressionType" type="uint8" value="0"/>
+                    <attribute id="Selectors" type="LSString" value="SelectPassives(b19d7c17-d92f-44a2-bc46-7d3a7e6e01bb,1,VoreRole)"/>
+                    <attribute id="TableUUID" type="guid" value="6d5def34-5dbf-4ea2-9cf9-e973530d7308"/>
+                    <attribute id="UUID" type="guid" value="db34a22b-422b-47e7-a86a-461908305a3c"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

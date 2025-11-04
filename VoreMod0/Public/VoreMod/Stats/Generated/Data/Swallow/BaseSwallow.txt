@@ -1,0 +1,22 @@
+new entry "SP_Target_Swallow"
+type "SpellData"
+data "SpellType" "Target"
+data "TargetRadius" "MeleeMainWeaponRange"
+data "TargetConditions" "SP_CanVore()"
+data "SpellRoll" "SwallowCheck()"
+
+new entry "SP_CanOralVore"
+type "PassiveData"
+data "DisplayName" "h3ec756e8g815fg4106g8228g60a6f56254b9;1"
+data "Boosts" "UnlockSpell(SP_Target_Swallow_O)"
+data "Properties" "Highlighted"
+
+new entry "VoreRole_Predator"
+type "PassiveData"
+data "DisplayName" "hcd9c0978ge193g4cf7ga79bgcd56d8b0a019;1"
+data "Description" "hcd9c0978ge193g4cf7ga79bgcd56d8b0a019;2"
+
+new entry "VoreRole_Prey"
+type "PassiveData"
+data "DisplayName" "he267a650gdc62g47e8g9544gc06f3b98cf76;1"
+data "Description" "he267a650gdc62g47e8g9544gc06f3b98cf76;2"

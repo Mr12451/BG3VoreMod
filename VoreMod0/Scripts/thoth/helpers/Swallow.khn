@@ -1,0 +1,7 @@
+function SP_CanVore()
+    return true
+end
+
+function SwallowCheck()
+    return true
+end
