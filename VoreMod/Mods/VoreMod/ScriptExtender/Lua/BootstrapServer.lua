@@ -1,7 +1,25 @@
+Ext.Require("Data/Main.lua")
+Ext.Require("Data/Enums.lua")
+
+Ext.Require("Events/Ticks.lua")
+
 Ext.Require("Utils/Output.lua")
-Ext.Require("Utils/Tables.lua")
-Ext.Require("Data/MainData.lua")
+Ext.Require("Utils/LuaUtils.lua")
+Ext.Require("Utils/ExtUtils.lua")
+
+Ext.Require("Config/Config.lua")
+
+Ext.Require("Data/Vore.lua")
 Ext.Require("Data/Persistent.lua")
+Ext.Require("Utils/DataUtils.lua")
+
+Ext.Require("Events/CharacterState.lua")
+Ext.Require("Events/Spell.lua")
+Ext.Require("Events/Effect.lua")
+
+Ext.Require("Vore/Swallow.lua")
+Ext.Require("Vore/Digestion.lua")
+Ext.Require("Vore/WeightSize.lua")
 
 --[[function makePredator(character)
     Osi.AddTag(character, "Predator")
@@ -18,21 +36,13 @@ function makeWillingPrey(character)
 end]]
 
 local function OnSessionLoaded()
-    _P("hello world server")
-
     _D(PersistentVars)
-    -- SP_ResetConfig()
-    -- SP_ResetRaceWeightsConfig()
-    -- SP_LoadConfigFromFile()
-    -- SP_LoadRaceWeightsConfigFromFile()
-    -- SP_LoadRaceBellyConfigFromFile()
-
     VO_SetupData()
+end
 
-    -- SP_MigratePersistentVars()
-
-    --[[_P("Add Passive")
-    Osi.AddPassive(GetHostCharacter(), "SP_CanOralVore")]]
+-- If you know where to get type hints for this, please let me know.
+if Ext.Osiris == nil then
+    Ext.Osiris = {}
 end
 
 Ext.Events.SessionLoaded:Subscribe(OnSessionLoaded)
@@ -48,3 +58,4 @@ Ext.Events.SessionLoaded:Subscribe(function()
     local allChars = Ext.GetCharacters()
     --registerOsirisListeners()
 end) ]]
+

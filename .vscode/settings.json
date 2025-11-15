@@ -13,12 +13,12 @@
         "function_param_name_style": "camel_case",
         "function_name_style": {
             "type": "pattern",
-            "param": "^(?:SP_)?(\\w+)$",
+            "param": "^(?:VO_)?(\\w+)$",
             "$1": "pascal_case"
         },
         "local_function_name_style": {
             "type": "pattern",
-            "param": "^(?:SP_)?(\\w+)$",
+            "param": "^(?:VO_)?(\\w+)$",
             "$1": "pascal_case"
         },
         //"table_field_name_style": "",

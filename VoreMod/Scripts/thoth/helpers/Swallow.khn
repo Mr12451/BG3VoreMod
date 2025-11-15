@@ -1,7 +1,42 @@
+function VO_IsPredOfPrey(pred, prey)
+    pred = pred or context.Target
+    prey = prey or context.Source
+    return HasAnyStatus({'VO_InOrgan_O','VO_InOrgan_A','VO_InOrgan_U','VO_InOrgan_C'},{},{}, prey, pred, false)
+end
+
+function VO_IsActivePred(entity)
+    entity = entity or context.Target
+    return HasStatus('VO_Full', entity)
+end
+
 function VO_CanVore()
-    return ConditionResult(true)
+    if HasStatus('VO_CooldownSwallow', context.Source).Result then
+        return ConditionResult(false)
+    end
+    if VO_IsPredOfPrey(context.Target, context.Source).Result then
+        return ConditionResult(false)
+    end
+    return ((Character() & ~Dead() | Item()) & IsMovable()) & ~Self() & CanShoveWeight() & ~Grounded() & ~Tagged('GASEOUS_FORM') & ~Tagged('CANT_SHOVE_THROW')
 end
 
 function VO_SwallowCheck()
-    return ConditionResult(true)
+    local pred = context.Source
+    local prey = context.Target
+    -- this variable will be calculated based on other factors later
+    local lethal = true
+    -- when used in conditions, bools must be turned into ConditionResults
+    local willing = (Ally() & ~ConditionResult(lethal)) | (Party(pred) & Party(prey)) | Item()
+    if not willing.Result then
+
+        local adv = IsSneakingOrInvisible() | IsCrowdControlled(prey)
+        local disadv = HasEvasion() | VO_IsActivePred(prey)
+
+        local preySkill = math.max(prey.GetPassiveSkill(Skill.Athletics),prey.GetPassiveSkill(Skill.Acrobatics))
+
+        local predSkill = Skill.Athletics
+
+        local skillCheck = SkillCheck(predSkill, preySkill, adv, disadv)
+        return ConditionResult(skillCheck.Result,{},{},skillCheck.Chance)
+    end
+    return willing
 end

@@ -1,5 +1,6 @@
 --- @meta
 --- @diagnostic disable
+
 --- Table that contains every ModTable entry for active mods.
 Mods = {}
 
@@ -47,7 +48,7 @@ function OsiDatabase:Delete(...) end
 
 --- The Osi table contains databases as well as calls, queries, events, and custom PROC / QRY defintions, as long as they are used in a script.  
 --- @type OsiCommonDatabases|OsiDynamic
-Osi = {}
+
 --- @alias AnyRef any
 --- @alias ComponentHandle userdata
 --- @alias EntityRef number
@@ -26520,7 +26521,6 @@ Ext_Enums.InputRawType = {
 	home = 10,
 	pageup = 11,
 	del = 12,
-    -- next line should be "end", but it bugs out lua diagnostics
 	end_ = 13,
 	pagedown = 14,
 	comma = 15,

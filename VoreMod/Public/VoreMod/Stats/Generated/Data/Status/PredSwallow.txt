@@ -1,0 +1,22 @@
+new entry "VO_CooldownSwallow"
+type "StatusData"
+data "StatusType" "BOOST"
+data "DisplayName" "hc6221acd1b8f4d8b9a3599ba39db766ce29g;2"
+data "Description" "h0c4e30b7b7f9457eb5f29b369c434779b14c;7"
+data "Icon" "Status_Exhaustion"
+data "StackId" "VO_CooldownSwallow"
+data "StackType" "Overwrite"
+data "StatusPropertyFlags" "DisableOverhead;DisableCombatlog"
+
+// used to determine if the swallow down spell is avalible or not
+new entry "VO_CanSwallowDown"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StackType" "Overwrite"
+data "StatusPropertyFlags" "DisableOverhead;FreezeDuration;IgnoreResting;DisableCombatlog;DisablePortraitIndicator"
+
+new entry "VO_AI_HELPER_BLOCKVORE"
+type "StatusData"
+data "StatusType" "BOOST"
+data "StatusPropertyFlags" "DisableOverhead;DisablePortraitIndicator;DisableCombatlog"
+data "StackType" "Overwrite"

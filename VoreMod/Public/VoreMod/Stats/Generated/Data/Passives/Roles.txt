@@ -1,0 +1,27 @@
+new entry "VO_IsPred"
+type "PassiveData"
+data "DisplayName" "h1e4520f277bf47b7888458d8ab6cef120ba3;1"
+data "Description" "hed8b329c94d14cb5b8da0116684804f7g5c9;1"
+data "Icon" "statIcons_Bloated"
+data "Boosts" "Tag(PREDATOR);UnlockSpell(VO_Target_Swallow);UnlockSpell(VO_Zone_SwallowDown);UnlockSpell(VO_Zone_Regurgitate)"
+data "Properties" "Highlighted"
+
+new entry "VO_CanOralVore"
+type "PassiveData"
+data "DisplayName" "h4b527957242440039099e5845bb8483407gb;1"
+data "Properties" "Highlighted"
+
+new entry "VO_CanAnalVore"
+type "PassiveData"
+data "DisplayName" "he5d22b86ca1044718a53f6551c9303b7g66e;1"
+data "Properties" "Highlighted"
+
+new entry "VO_CanUnbirth"
+type "PassiveData"
+data "DisplayName" "hfb2541c5c74a44449a8e6b57c170d36a8519;1"
+data "Properties" "Highlighted"
+
+new entry "VO_CanCockVore"
+type "PassiveData"
+data "DisplayName" "hd6d6713f73a74287afcae5e4e7f63cd5774a;1"
+data "Properties" "Highlighted"
